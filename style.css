@@ -1,0 +1,294 @@
+  animation:grain 5  animation:grain 58@font-face {
+    font-family: Neue-Haas-Grotesk-Bold;
+    src: url(https://cdn.glitch.global/be2b9890-2d85-4e8e-a42d-69709297fbdf/NHaasGroteskTXPro-75Bd.ttf?v=1649302218257);
+  }
+
+@font-face {
+    font-family: PPRader-Bold;
+    src: url(https://cdn.glitch.global/be2b9890-2d85-4e8e-a42d-69709297fbdf/PPRader-Bold.otf?v=1650478506982);
+  }
+
+@font-face {
+    font-family: PPRader-Reg;
+    src: url(https://cdn.glitch.global/be2b9890-2d85-4e8e-a42d-69709297fbdf/PPRader-Regular.otf?v=1650478512186);
+  }
+
+
+
+html, body {
+    height: 100%;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* .page1 #body {
+  height: 100%;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.page1 #html {
+  height: 100%;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.page2 #body {
+    height: 100%;
+  background: #ffffff;
+} */
+
+h1 {
+  color: #000000;
+  font-family: Neue-Haas-Grotesk-Bold, sans-serif;
+  font-size: 24px;
+}
+
+h3 {
+  color: #000000;
+  font-family: Neue-Haas-Grotesk-Bold, sans-serif;
+  font-size: 30px;
+}
+
+h4 {
+  color: #000000;
+  font-family: PPRader-Bold, sans-serif;
+  font-size: 24px;
+}
+
+h5 {
+  color: #000000;
+  font-family: PPRader-Reg, sans-serif;
+  font-size: 30px;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+p {
+  color: #ffffff;
+}
+
+
+
+.topnav {
+  height: 57px;
+  width: 100%;
+  display: flex;
+  left: 0;
+  box-sizing: border-box;
+/*   border: 2px solid black;
+  margin: 0;
+  padding: 0; */
+  z-index: 2;
+}
+
+.split {
+  height: 90%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 65px;
+  bottom: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #000000;
+}
+
+.right {
+  right: 0;
+  height: 100vh;
+  width: 50%;
+  background-image: url('https://cdn.glitch.global/be2b9890-2d85-4e8e-a42d-69709297fbdf/SS%20-%20p3-11.png?v=1650469819789');
+  background-size: 100%;
+  z-index: 1;
+  filter: contrast(120%);
+   background-repeat: none;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+/*   position: fixed; */
+}
+
+.themap {
+  width: 50vw;
+}
+
+.path {
+  position: relative;
+  top: -10%;
+  overflow: hidden;
+}
+
+.path2 {
+  position: relative;
+  top: 0;
+  overflow: hidden;
+}
+
+.cover-image {
+  width: 100%;
+}
+
+.home-page {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.coll-page {
+  margin-right: 15px;
+}
+
+.abou-page {
+  margin-right: 15px;
+}
+
+
+
+.rightfoot {
+  width: 200px;
+  position: relative;
+  z-index: 10;
+}
+
+.footer {
+  z-index: 10;
+}
+
+.desc {
+  margin-left: 15%;
+  margin-right: 15%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: 2px solid black;
+  padding-left: 40px;
+  padding-right: 40px
+}
+
+
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #000000;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  transform: translate(-8px)
+}
+
+.background::after {
+  content:"";
+  position: absolute;
+  width: 200vw;
+  height: 200vh;
+  left: -50%;
+  top: -50%;
+  background-image: url("https://cdn.glitch.global/be2b9890-2d85-4e8e-a42d-69709297fbdf/FilmGrain100.png?v=16  animation: grain 100501584976");
+}
+
+.background::after {
+  animation:grain 5s steps(6) infinite;
+}
+
+.grain {
+  z-index: 1;
+}
+
+@keyframes grain {
+  0%, 100% {transform: translate(0,0);}
+  25% {transform: translate(-5%,-10%);}
+  50% {transform: translate(3%,15%);}
+  75% {transform: translate(12%,9%);}
+  
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  
+  .split {
+  height: 90%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 65px;
+  bottom: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+  
+  .left {
+  left: 0;
+  background-color: #000000;
+  width: 100vw;
+  height: 50%;
+  top: 50vh;
+}
+
+  .right {
+  right: 0;
+  top: 45px; 
+  height: 39.9vh;
+  overflow: hidden;
+  bottom: 0;
+  background-repeat: none;
+}
+  
+  .themap {
+    width: 100vw;
+  }
+  
+    .desc {
+    margin-left: 5%;
+    margin-right: 5%;
+    position: absolute;
+    top: 0%;
+    transform: translate(0, 100px);
+}
+  
+  h3 {
+    font-size: 24px;
+  }
+
+}
+
+media only screen and (size: 480px) {
+  h1 {
+    font-size: 10px;
+  }
+  
+}
